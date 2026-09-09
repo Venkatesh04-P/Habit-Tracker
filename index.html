@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Habit Tracker - PIRKOJI VENKATESH</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <p class="label">DAILY PRODUCTIVITY</p>
+                <h1>Habit Tracker</h1>
+                <p class="subtitle">
+                    Build consistency, track your progress, and maintain your streak.
+                </p>
+            </div>
+
+            <div class="date-box" id="currentDate"></div>
+        </header>
+
+
+        <!-- Add Habit -->
+        <section class="add-section">
+
+            <input
+                type="text"
+                id="habitInput"
+                placeholder="Enter a new habit..."
+                maxlength="50"
+            >
+
+            <button id="addHabitBtn">
+                + Add Habit
+            </button>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h2 id="totalHabits">0</h2>
+                <p>Total Habits</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedToday">0</h2>
+                <p>Completed Today</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="bestStreak">0</h2>
+                <p>Best Current Streak</p>
+            </div>
+
+        </section>
+
+
+        <!-- Today's Habits -->
+        <section class="habits-section">
+
+            <div class="section-header">
+                <h2>Today's Habits</h2>
+                <span id="progressText">0% complete</span>
+            </div>
+
+            <div id="habitList"></div>
+
+            <div id="emptyMessage" class="empty-message">
+                No habits yet. Add your first habit above.
+            </div>
+
+        </section>
+
+
+        <!-- Weekly View -->
+        <section class="weekly-section">
+
+            <div class="section-header">
+                <h2>Weekly View</h2>
+                <span>Last 7 Days</span>
+            </div>
+
+            <div id="weeklyView" class="weekly-view"></div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            Habit Tracker | HTML5 | CSS3 | JavaScript | LocalStorage
+            <br>
+            <strong>PIRKOJI VENKATESH</strong>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
